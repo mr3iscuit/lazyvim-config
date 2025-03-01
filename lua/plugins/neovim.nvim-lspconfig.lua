@@ -1,4 +1,6 @@
-if false then
+local isEnabled = false
+
+if isEnabled then
   return {
     "neovim/nvim-lspconfig",
   }

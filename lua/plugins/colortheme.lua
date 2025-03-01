@@ -1,11 +1,13 @@
-local conf = require("config.config")
+local isEnabled = true
+local package = "projekt0n/github-nvim-theme"
+local colortheme = "github_dark_dimmed"
 
-if conf.colortheme.isEnabled then
+if isEnabled then
   return {
-    conf.colortheme.plugin,
+    package,
 
     config = function()
-      vim.cmd("colorscheme " .. conf.colortheme.theme)
+      vim.cmd("colorscheme " .. colortheme)
     end,
   }
 end

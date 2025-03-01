@@ -1,4 +1,6 @@
-if require("config.config").lang.java.isEnabled then
+local isEnabled = true
+
+if isEnabled then
   return {
     "nvim-java/nvim-java",
     config = false,

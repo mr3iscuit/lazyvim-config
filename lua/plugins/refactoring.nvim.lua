@@ -1,5 +1,3 @@
-local conf = require("config.config")
-
 if false then
   return {
     {
